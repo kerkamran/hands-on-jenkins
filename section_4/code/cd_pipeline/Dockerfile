@@ -2,7 +2,7 @@
 FROM alpine:3.7
 
 # Install python 3 and pip
-RUN apk add --no-cache python3 py3-pip
+RUN apk add --no-cache python3 pip
 
 # Install Python modules needed by the Python app
 COPY requirements.txt /usr/src/app/
