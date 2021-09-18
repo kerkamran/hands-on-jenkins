@@ -1,9 +1,9 @@
 # base image
-#FROM alpine:3.7
-FROM python:3.6-alpine
+FROM alpine:3.7
+
 
 # Install python 3 and pip
-#RUN apk add --no-cache python
+RUN apk add --no-cache python
 
 # Install Python modules needed by the Python app
 RUN pip3 install Flask
