@@ -6,8 +6,7 @@ FROM python:3.6-alpine
 #RUN apk add --no-cache python
 
 # Install Python modules needed by the Python app
-COPY requirements.txt /usr/src/app/
-RUN pip3 install --no-cache-dir -r /usr/src/app/requirements.txt
+RUN pip3 install Flask
 
 # Copy files required for the app to run
 COPY app.py /usr/src/app/
